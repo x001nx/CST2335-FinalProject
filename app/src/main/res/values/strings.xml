@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Assignment1</string>
+    <string name="app_name">Final Project</string>
+    <string name="station_number">Enter stop number</string>
+    <string name="button_search">Go</string>
 </resources>
