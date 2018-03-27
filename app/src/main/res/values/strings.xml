@@ -2,4 +2,7 @@
     <string name="app_name">Final Project</string>
     <string name="station_number">Enter stop number</string>
     <string name="button_search">Go</string>
+    <string name="stopDetailsNumber">Stop Number</string>
+    <string name="stopDetailsDescription">Stop Name</string>
+    <string name="stopDetailsRoutes">Routes</string>
 </resources>

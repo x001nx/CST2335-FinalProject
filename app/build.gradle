@@ -31,3 +31,6 @@ dependencies {
 dependencies {
     compile 'de.siegmar:fastcsv:1.0.2'
 }
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
