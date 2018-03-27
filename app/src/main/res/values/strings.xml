@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Assignment1</string>
+
+    <string name="app_name">Final Project</string>
+    <string name="station_number">Enter stop number</string>
+    <string name="button_search">Go</string>
+
+    
     <string name="doctorChoice">Please, select a doctor</string>
     <string name="doctorOffice">Doctor\'s Office</string>
     <string name="dentist">Dentist</string>
@@ -26,6 +31,7 @@
 
     <string name="glasses">What date did you buy your glasses?</string>
     <string name="store">Which store did you buy your glasses from?</string>
+
 
 
 </resources>

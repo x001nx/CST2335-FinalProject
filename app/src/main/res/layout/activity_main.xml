@@ -27,7 +27,7 @@
             android:text="Ksenia Lopukhina" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/pavel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignStart="@id/button1"
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignStart="@id/button1"
-            android:layout_below="@id/button3"
+            android:layout_below="@id/pavel"
             android:text="Svetlana Netchaeva" />
     </LinearLayout>
 </RelativeLayout>
