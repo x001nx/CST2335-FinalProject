@@ -19,27 +19,6 @@ RadioButton KLradioBOptom;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_choice);
 
-
-        //I tried to follow this instructions to import snackbar:
-
-//        Open [File] -> [Project Structure...]
-//
-//        Select [app] in the left pad
-//
-//        Select [Dependencies] in the right tabs
-//
-//        Click [+] button on the right side
-//
-//        Select [1 Library dependency]
-//
-//        Choose [com.android.support:design ~~]
-//
-//        Click [OK] button and so on
-
-        // now R.id doesn't work
-
-
-
         KLradioBdoctorOffice = (RadioButton)findViewById(R.id.checkBoxDocOffice);
         KLradioBDentist = (RadioButton)findViewById(R.id.checkBoxDent);
         KLradioBOptom = (RadioButton)findViewById(R.id.checkBoxOptom);
