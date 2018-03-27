@@ -10,14 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DoctorChoice">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".PavelStartActivity"></activity>
+
+        <activity android:name=".PatientForm" />
+        <activity android:name=".DoctorOfficeExtra" />
+        <activity android:name=".DentistExtra" />
+        <activity android:name=".OptometristExtra" />
+        <activity android:name=".ListView"></activity>
+
     </application>
 
 </manifest>
