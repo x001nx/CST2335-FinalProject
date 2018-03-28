@@ -8,6 +8,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.util.Xml;
 import android.view.Gravity;
@@ -53,7 +55,6 @@ public class PavelStartActivity extends Activity {
     private ProgressBar progressBar;
     private Button searchStops;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         osQuery = "https://api.octranspo1.com/v1.2/GetRouteSummaryForStop?appID=c88f040c&&apiKey=fe500fc8da4e4f5e823b913c388cc2f1&";
@@ -67,6 +68,7 @@ public class PavelStartActivity extends Activity {
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         progressBar.setMax(100);
         progressBar.setVisibility(View.INVISIBLE);
+
 
         stationsArray = new ArrayList<>();
         stopsAdapter = new StopsAdapter(this);
@@ -312,11 +314,14 @@ public class PavelStartActivity extends Activity {
             super.onPostExecute(result);
             progressBar.setVisibility(View.INVISIBLE);
             if(!errorCode.isEmpty()) {
+                View testView = findViewById(android.R.id.content);
                 CharSequence text = "Invalid Stop Number";// "Switch is Off"
                 int duration = Toast.LENGTH_LONG; //= Toast.LENGTH_LONG if Off
                 Toast toast = Toast.makeText(ctx, text, duration);//this is the ListActivity
                 toast.setGravity(Gravity.TOP|Gravity.CENTER, 0, 0);
                 toast.show(); //display your message box
+                Snackbar snackbar = Snackbar.make(testView,"Invalid Station Number", Snackbar.LENGTH_LONG);
+                snackbar.show();
                 return;
             }
             else {
