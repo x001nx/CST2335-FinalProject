@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment1</string>
+
     <string name="hintTextItem">Add movie here</string>
     <string name="addButton">Add movie</string>
     <string name="deleteButton">Delete movie</string>
     <string name="menu_settings">Settings</string>
     <string name="button_label">Show Dialog Box</string>
     <string name="dialog_button_label">OK</string>
+    <string name="app_name">Final Project</string>
+    <string name="station_number">Enter stop number</string>
+    <string name="button_search">Go</string>
+
+
+    <string name="doctorChoice">Please, select a doctor</string>
+    <string name="doctorOffice">Doctor\'s Office</string>
+    <string name="dentist">Dentist</string>
+    <string name="optometrist">Optometrist </string>
+
+    <string name="fName">First Name </string>
+    <string name="lName">Last Name </string>
+    <string name="address">Address</string>
+    <string name="bDate">Date of Birth</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="hCardNumber">Health Card Number</string>
+    <string name="reason">Reason for a visit</string>
+    <string name="next">Next</string>
+    <string name="enterInfo">Please, fill out and press "Next":</string>
+
+    <string name="continueForm">Please, finish the form and press "Submit button":</string>
+    <string name="surgeries">Specify any previous surgeries:</string>
+    <string name="allergies">Specify any previous allergies:</string>
+    <string name="KLbtnSubmit">Submit</string>
+    <string name="braces">Have you ever had braces?</string>
+    <string name="benefits">Do you have medical benefits?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="glasses">What date did you buy your glasses?</string>
+    <string name="store">Which store did you buy your glasses from?</string>
+
+
 </resources>
 
