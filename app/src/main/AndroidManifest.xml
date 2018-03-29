@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MovieActivity" android:label="MovieActivity"></activity>
-        <activity android:name=".MovieListViewActivity"></activity>
+        <activity
+            android:name=".MovieActivity"
+            android:label="MovieActivity" />
+        <activity android:name=".MovieListViewActivity" />
         <activity android:name=".DoctorChoice" />
         <activity android:name=".PavelStartActivity" />
         <activity android:name=".StopDetailsActivity" />
@@ -28,7 +30,8 @@
         <activity android:name=".DentistExtra" />
         <activity android:name=".OptometristExtra" />
         <activity android:name=".ListView" />
-        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".AnnaListView"></activity>
     </application>
 
 </manifest>

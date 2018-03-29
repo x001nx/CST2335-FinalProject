@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delle6330.assignment1.Anna_ListView_Activity">
+    tools:context="com.example.delle6330.assignment1.AnnaListView"
+    android:orientation="vertical">
     <ProgressBar
         android:id="@+id/progressBarAnna"
         style="?android:attr/progressBarStyle"
@@ -15,13 +16,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:visibility="invisible"
-         />
+        />
 
     <ListView
         android:id="@+id/questionViewAnna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorGrass"
+        android:layout_below="@id/progressBarAnna"
         >
 
     </ListView>
@@ -31,7 +33,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorBitterSweetDark"
-        android:layout_alignBottom="@+id/questionViewAnna"
-        android:layout_alignParentRight="true"
-        android:text="Answer"/>
+        android:text="Answer"
+        android:layout_below="@id/questionViewAnna">
+    </Button>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="EditText"
+        android:layout_below="@id/questionViewAnna"
+        android:layout_toRightOf="@id/answerButtonAnna"/>
+
 </RelativeLayout>
