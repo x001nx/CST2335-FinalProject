@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
     Button pavel;
     Button ksenia;
     Button anna;
+    Button sveta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

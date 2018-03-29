@@ -1,5 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="hintTextItem">Add movie here</string>
+    <string name="addButton">Add movie</string>
+    <string name="deleteButton">Delete movie</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_label">Show Dialog Box</string>
+    <string name="dialog_button_label">OK</string>
     <string name="app_name">Final Project</string>
     <string name="station_number">Enter stop number</string>
     <string name="button_search">Go</string>
@@ -34,3 +41,4 @@
 
 
 </resources>
+

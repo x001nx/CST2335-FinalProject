@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MovieActivity" android:label="MovieActivity"></activity>
+        <activity android:name=".MovieListViewActivity"></activity>
         <activity android:name=".DoctorChoice" />
         <activity android:name=".PavelStartActivity" />
         <activity android:name=".StopDetailsActivity" />
