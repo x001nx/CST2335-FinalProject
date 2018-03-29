@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     Button pavel;
     Button ksenia;
     Button anna;
-    Button sveta;
+    Button svetlana;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
         pavel = findViewById(R.id.pavel);
         ksenia = findViewById(R.id.ksenia);
         anna = findViewById(R.id.anna);
+        svetlana = findViewById(R.id.svetlana);
 
+        //Buttons to individual Activities
         anna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DoctorChoice.class);
                 startActivity(intent);
+            }
+        });
+
+        svetlana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MovieActivity.class)) ;
             }
         });
     }
