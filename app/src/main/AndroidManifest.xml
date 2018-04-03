@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.delle6330.assignment1">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,23 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DoctorChoice">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".PavelStartActivity"></activity>
-
+        <activity
+            android:name=".MovieActivity"
+            android:label="MovieActivity" />
+        <activity android:name=".MovieListViewActivity" />
+        <activity android:name=".DoctorChoice" />
+        <activity android:name=".PavelStartActivity" />
+        <activity android:name=".StopDetailsActivity" />
         <activity android:name=".PatientForm" />
         <activity android:name=".DoctorOfficeExtra" />
         <activity android:name=".DentistExtra" />
         <activity android:name=".OptometristExtra" />
-        <activity android:name=".ListView"></activity>
-
+        <activity android:name=".ListView" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".AnnaListView"></activity>
     </application>
 
 </manifest>

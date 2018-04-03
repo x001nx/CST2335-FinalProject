@@ -1,10 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="hintTextItem">Add movie here</string>
+    <string name="addButton">Add movie</string>
+    <string name="deleteButton">Delete movie</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_label">Show Dialog Box</string>
+    <string name="dialog_button_label">OK</string>
     <string name="app_name">Final Project</string>
     <string name="station_number">Enter stop number</string>
     <string name="button_search">Go</string>
 
-    
+
     <string name="doctorChoice">Please, select a doctor</string>
     <string name="doctorOffice">Doctor\'s Office</string>
     <string name="dentist">Dentist</string>
@@ -33,5 +40,5 @@
     <string name="store">Which store did you buy your glasses from?</string>
 
 
-
 </resources>
+

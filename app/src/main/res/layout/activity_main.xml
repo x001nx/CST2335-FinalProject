@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relativeLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -13,33 +14,34 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/anna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Anna Shteyngart" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/ksenia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@id/button1"
-            android:layout_below="@id/button1"
+            android:layout_alignStart="@id/anna"
+            android:layout_below="@id/anna"
             android:text="Ksenia Lopukhina" />
 
         <Button
             android:id="@+id/pavel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@id/button1"
-            android:layout_below="@id/button2"
+            android:layout_alignStart="@id/ksenia"
+            android:layout_below="@id/ksenia"
             android:text="Pavel Jilinski" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/svetlana"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@id/button1"
+            android:layout_alignStart="@id/ksenia"
             android:layout_below="@id/pavel"
             android:text="Svetlana Netchaeva" />
+
     </LinearLayout>
 </RelativeLayout>

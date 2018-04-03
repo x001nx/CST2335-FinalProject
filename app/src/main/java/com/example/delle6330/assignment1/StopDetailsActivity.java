@@ -1,7 +1,9 @@
 package com.example.delle6330.assignment1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -50,6 +53,31 @@ public class StopDetailsActivity extends Activity {
         listView = findViewById(R.id.stopDetailsListView);
         routesAdapter = new RoutesAdapter(this);
         listView.setAdapter(routesAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(StopDetailsActivity.this);
+                // 2. Chain together various setter methods to set the dialog characteristics
+                builder.setMessage("Stop clicked") //Add a dialog message to strings.xml
+
+                        .setTitle(stopNumber.getText())
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Log.i("OK", "OK");
+                                finish();
+
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+//                                    Log.i("CANCEL", "CANCEL");
+                            }
+                        })
+                        .show();
+
+            }
+        });
+
 
         Intent intent = getIntent();
         number = intent.getStringExtra("number");
