@@ -38,6 +38,10 @@
 
     <string name="glasses">What date did you buy your glasses?</string>
     <string name="store">Which store did you buy your glasses from?</string>
+    <string name="btnAnswerMCAnna"> ANSWER </string>
+    <string name="questionTextAnna"> Here will be the text of the question </string>
+    <string name="title_activity_anna_true_false">AnnaTrueFalse</string>
+    <string name="action_settings">Settings</string>
 
 
 </resources>

@@ -2,5 +2,7 @@
 <resources>
 
     <string name="doctorChoice">Выберете доктора</string>
+    <string name="btnAnswerMCAnna"> Ответ </string>
+    <string name="questionTextAnna"> Здесь будет текст вопроса </string>
 
 </resources>

@@ -31,7 +31,12 @@
         <activity android:name=".OptometristExtra" />
         <activity android:name=".ListView" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".AnnaListView"></activity>
+        <activity android:name=".AnnaListView" />
+        <activity android:name=".AnnaMultipleChoiceActivity" />
+        <activity
+            android:name=".AnnaTrueFalse"
+            android:label="@string/title_activity_anna_true_false"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
