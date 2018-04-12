@@ -1,34 +1,34 @@
-package com.example.delle6330.assignment1;
+        package com.example.delle6330.assignment1;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
-import android.util.Xml;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+        import android.app.Activity;
+        import android.app.AlertDialog;
+        import android.content.Context;
+        import android.content.DialogInterface;
+        import android.content.Intent;
+        import android.os.AsyncTask;
+        import android.os.Bundle;
+        import android.util.Log;
+        import android.util.Xml;
+        import android.view.Gravity;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.AdapterView;
+        import android.widget.ArrayAdapter;
+        import android.widget.ListView;
+        import android.widget.TextView;
+        import android.widget.Toast;
 
-import org.xmlpull.v1.XmlPullParser;
+        import org.xmlpull.v1.XmlPullParser;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
+        import java.io.IOException;
+        import java.io.InputStream;
+        import java.net.HttpURLConnection;
+        import java.net.MalformedURLException;
+        import java.net.URL;
+        import java.util.ArrayList;
 
-public class StopDetailsActivity extends Activity {
+public class PavelStopDetailsActivity extends Activity {
     TextView stopNumber;
     TextView stopDescription;
     ListView listView;
@@ -46,7 +46,7 @@ public class StopDetailsActivity extends Activity {
         routeDirectionAL = new ArrayList<>();
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stop_details);
+        setContentView(R.layout.activity_pavel_stop_details);
         ctx = this;
         stopNumber = findViewById(R.id.stopDetailsNumber);
         stopDescription = findViewById(R.id.stopDetailsDescription);
@@ -56,7 +56,7 @@ public class StopDetailsActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(StopDetailsActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(PavelStopDetailsActivity.this);
                 // 2. Chain together various setter methods to set the dialog characteristics
                 builder.setMessage("Stop clicked") //Add a dialog message to strings.xml
 
@@ -94,7 +94,7 @@ public class StopDetailsActivity extends Activity {
      * RoutesAdapter
      */
     public class RoutesAdapter extends ArrayAdapter<String> {
-        LayoutInflater inflater = StopDetailsActivity.this.getLayoutInflater();
+        LayoutInflater inflater = PavelStopDetailsActivity.this.getLayoutInflater();
         /**
          * New ListView element layout
          */
