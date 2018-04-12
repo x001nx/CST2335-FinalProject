@@ -39,6 +39,23 @@
     <string name="glasses">What date did you buy your glasses?</string>
     <string name="store">Which store did you buy your glasses from?</string>
 
+    <string name="btnAnswerMCAnna"> ANSWER </string>
+    <string name="questionTextAnna"> Here will be the text of the question </string>
+    <string name="title_activity_anna_true_false">AnnaTrueFalse</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="pj_help">About</string>
+    <string name="pj_dialog">About</string>
+    <string name="pj_ok">OK</string>
+    <string name="pj_name">Pavel Jilinski</string>
+    <string name="pj_version">V2.0</string>
+    <string name="pj_instructions">Enter bus stop number to search for upcoming trips. The stop number can be found at the
+    bus stop sign. It is a 4 digit number. Enter this numer in the text field and press Enter or Go. The bus stop if found
+        is added to the screen at the top (if number is invalid an error message is displayed. Click on the station found to see
+    routes that service this stop.</string>
+    <string name="pj_delete_stop">Delete Stop</string>
 
 </resources>
 

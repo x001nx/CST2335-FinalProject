@@ -21,7 +21,7 @@ public class OptometristExtra extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(OptometristExtra.this, ListView.class);
+                Intent intent = new Intent(OptometristExtra.this, KseniaListView.class);
                 intent.putExtra("messageFromOptometrist", "Form at Optometrist' Office is submitted");
                 Bundle extras = new Bundle();
                 extras.putString("statusFromOptometrist", "Form at Optometrist's Office is submitted");

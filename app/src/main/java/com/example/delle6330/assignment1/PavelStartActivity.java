@@ -1,20 +1,26 @@
 package com.example.delle6330.assignment1;
 
-import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.util.Xml;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -36,10 +42,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
-public class PavelStartActivity extends Activity {
+public class PavelStartActivity extends AppCompatActivity {
     private Context ctx;
     private ListView lv;
     private EditText et;
@@ -54,13 +59,23 @@ public class PavelStartActivity extends Activity {
     private StopsAdapter stopsAdapter;
     private ProgressBar progressBar;
     private Button searchStops;
+    private boolean isLandscape;
+    private PavelStopsFragment stopsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         osQuery = "https://api.octranspo1.com/v1.2/GetRouteSummaryForStop?appID=c88f040c&&apiKey=fe500fc8da4e4f5e823b913c388cc2f1&";
         super.onCreate(savedInstanceState);
+        final int orientation = getResources().getConfiguration().orientation;
+        Log.i("******* ORIENTATION", String.valueOf(orientation));
+
+        if (orientation == 2) {
+            isLandscape = true;
+        }
         setContentView(R.layout.activity_pavel_start);
         ctx = this;
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         lv = (ListView) findViewById(R.id.stations_list);
         et = (EditText) findViewById(R.id.station_number);
@@ -68,7 +83,6 @@ public class PavelStartActivity extends Activity {
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         progressBar.setMax(100);
         progressBar.setVisibility(View.INVISIBLE);
-
 
         stationsArray = new ArrayList<>();
         stopsAdapter = new StopsAdapter(this);
@@ -87,6 +101,7 @@ public class PavelStartActivity extends Activity {
             Log.i("****** Cursor", "Size " + String.valueOf(cursor.getCount()));
 //            populateDatabase();
         }
+
         Log.i("****** Cursor", "Size " + String.valueOf(cursor.getCount()));
 
         try {
@@ -96,6 +111,7 @@ public class PavelStartActivity extends Activity {
                 Log.i("****** Read Databse", "Position " + cursor.getPosition() + " Number " + stationNumber);
                 Log.i("****** Read Databse", "Position " + cursor.getPosition() + " Number " + stationDescription);
                 stationsArray.add(new String[]{stationNumber, stationDescription});
+
                 cursor.moveToNext();
             }
         } catch (Exception e){
@@ -128,15 +144,72 @@ public class PavelStartActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
                 TextView tvStopNumber = view.findViewById(R.id.stopNumber);
                 TextView tvStopDescr = view.findViewById(R.id.stopDescription);
-                Log.i("****** OnItemClick", String.valueOf(tvStopNumber.getText()  + " " + tvStopDescr.getText()));
-                Intent intent = new Intent(PavelStartActivity.this, StopDetailsActivity.class);
-                intent.putExtra("number", tvStopNumber.getText());
-                intent.putExtra("description", tvStopDescr.getText());
-                startActivity(intent);
+//                Log.i("****** OnItemClick", String.valueOf(tvStopNumber.getText()  + " " + tvStopDescr.getText()));
+//                Intent intent = new Intent(PavelStartActivity.this, PavelStopDetailsActivity.class);
+//                intent.putExtra("number", tvStopNumber.getText());
+//                intent.putExtra("description", tvStopDescr.getText());
+//                startActivity(intent);
+
+
+                //Store bundle info
+                Bundle infoToPass = new Bundle();
+                infoToPass.putString("number", String.valueOf(tvStopNumber.getText()));
+                infoToPass.putString("description" , String.valueOf(tvStopDescr.getText()));
+                infoToPass.putBoolean("isLandscape", isLandscape);
+
+                if (isLandscape){//for a tablet or landscape
+                    FragmentManager fm = getFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    stopsFragment  =  new PavelStopsFragment();
+                    stopsFragment.setArguments( infoToPass );
+                    //Replace item with id = frame with class messageFragment - is already loaded because its a tablet or landscape
+                    ft.replace( R.id.pj_stops_land_frame, stopsFragment);
+                    ft.commit();
+
+                }
+                else {//create new intent with MessageDetails.
+                    Intent phoneIntent = new Intent (PavelStartActivity.this, PavelStopDetailsPort.class);
+                    phoneIntent.putExtras(infoToPass);
+                    startActivityForResult(phoneIntent, 50);
+                }
             }
         });
         stopsAdapter.notifyDataSetChanged();
 
+    }
+
+    public boolean onCreateOptionsMenu(Menu m) {
+        getMenuInflater().inflate(R.menu.toolbarmenu, m);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem mi) {
+        int id = mi.getItemId();
+        Log.i("****** Lab8 Id", String.valueOf(mi.getItemId()));
+
+        switch (id) {
+            case R.id.pjhelp:
+                customDialog();
+                break;
+            default:
+                Log.i("****** Final Project", "Something else");
+                break;
+        }
+        return true;
+    }
+
+    public void customDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View view = getLayoutInflater().inflate(R.layout.pavel_help_dialog, null);
+        builder.setView(view);
+        builder.setPositiveButton(R.string.pj_ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.i("******* Lab8 Dialog", String.valueOf(et.getText()));
+                et.getText();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     /**
@@ -313,6 +386,10 @@ public class PavelStartActivity extends Activity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             progressBar.setVisibility(View.INVISIBLE);
+            if (errorCode == null){
+                Log.i("*****onPostExecute", "null value");
+                errorCode = "null value";
+            }
             if(!errorCode.isEmpty()) {
                 View testView = findViewById(android.R.id.content);
                 CharSequence text = "Invalid Stop Number";// "Switch is Off"
@@ -347,5 +424,41 @@ public class PavelStartActivity extends Activity {
             progressBar.setProgress(progressValue[0]);
 
         }
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 50) {
+            if (resultCode == 50){
+                //update database
+                Bundle infoToPass = data.getExtras();
+                //*******
+                String stopNumber = (String) infoToPass.get("stopNumber");
+                deleteStop(stopNumber);
+            }
+        }
+    }
+
+    public void deleteStop(String s) {
+
+        //DATABASE
+        //DatabaseHelper
+        OSDatabaseHelper dbHelper = new OSDatabaseHelper(ctx);
+        //Get WritableDatabase
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        //ContentView
+        ContentValues cv = new ContentValues();
+        //Read from database
+        db.delete(dbHelper.TABLE_NAME, dbHelper.STATION_NUMBER + " = " + s, null);
+        for (int i=0; i<stationsArray.size(); i++){
+            if (stationsArray.get(i)[0].equals(s)){
+                stationsArray.remove(i);
+            }
+        }
+        stopsAdapter.notifyDataSetChanged();
+        if (isLandscape) {
+            getFragmentManager().beginTransaction().remove(stopsFragment);
+        }
+
     }
 }
