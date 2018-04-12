@@ -21,7 +21,7 @@ public class DentistExtra extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(DentistExtra.this, ListView.class);
+                Intent intent = new Intent(DentistExtra.this, KseniaListView.class);
                 intent.putExtra("messageFromDentist", "Form at Dentist' Office is submitted");
                 Bundle extras = new Bundle();
                 extras.putString("statusFromDentist", "Form at Dentist's Office is submitted");

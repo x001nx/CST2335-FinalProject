@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,15 +26,18 @@
             android:label="MovieActivity" />
         <activity android:name=".MovieListViewActivity" />
         <activity android:name=".DoctorChoice" />
-        <activity android:name=".PavelStartActivity" />
-        <activity android:name=".StopDetailsActivity" />
+        <activity
+            android:name=".PavelStartActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".PavelStopDetailsActivity" />
         <activity android:name=".PatientForm" />
         <activity android:name=".DoctorOfficeExtra" />
         <activity android:name=".DentistExtra" />
         <activity android:name=".OptometristExtra" />
-        <activity android:name=".ListView" />
+        <activity android:name=".KseniaListView" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".AnnaListView"></activity>
+        <activity android:name=".AnnaListView" />
+        <activity android:name=".PavelStopDetailsPort"></activity>
     </application>
 
 </manifest>
