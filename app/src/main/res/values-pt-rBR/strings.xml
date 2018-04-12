@@ -5,4 +5,10 @@
     <string name="stopDetailsNumber">Numero do Ponto</string>
     <string name="stopDetailsDescription">Nome do Ponto</string>
     <string name="stopDetailsRoutes">Rota</string>
+    <string name="pj_help">Sobre</string>
+    <string name="pj_dialog">Sobre</string>
+    <string name="pj_name">Pavel Jilinski</string>
+    <string name="pj_version">V2.0</string>
+    <string name="pj_instructions">Entre o numero do ponto para ver as rotas</string>
+    <string name="pj_delete_stop">Deletar ponto</string>
 </resources>

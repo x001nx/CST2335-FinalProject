@@ -7,7 +7,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ListView extends AppCompatActivity {
+public class KseniaListView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
