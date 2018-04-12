@@ -38,6 +38,14 @@
 
     <string name="glasses">What date did you buy your glasses?</string>
     <string name="store">Which store did you buy your glasses from?</string>
+
+    <string name="btnAnswerMCAnna"> ANSWER </string>
+    <string name="questionTextAnna"> Here will be the text of the question </string>
+    <string name="title_activity_anna_true_false">AnnaTrueFalse</string>
+    <string name="action_settings">Settings</string>
+
+
+
     <string name="pj_help">About</string>
     <string name="pj_dialog">About</string>
     <string name="pj_ok">OK</string>
@@ -48,5 +56,6 @@
         is added to the screen at the top (if number is invalid an error message is displayed. Click on the station found to see
     routes that service this stop.</string>
     <string name="pj_delete_stop">Delete Stop</string>
+
 </resources>
 

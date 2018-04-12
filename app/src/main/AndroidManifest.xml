@@ -37,7 +37,13 @@
         <activity android:name=".KseniaListView" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".AnnaListView" />
-        <activity android:name=".PavelStopDetailsPort"></activity>
+        <activity android:name=".AnnaMultipleChoiceActivity" />
+        <activity
+            android:name=".AnnaTrueFalse"
+            android:label="@string/title_activity_anna_true_false"
+            android:theme="@style/AppTheme.NoActionBar">
+      </activity>
+       <activity android:name=".PavelStopDetailsPort"></activity>
     </application>
 
 </manifest>
