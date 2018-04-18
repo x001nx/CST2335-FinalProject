@@ -25,16 +25,10 @@
             android:name=".MovieActivity"
             android:label="MovieActivity" />
         <activity android:name=".MovieListViewActivity" />
-        <activity android:name=".DoctorChoice" />
         <activity
             android:name=".PavelStartActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".PavelStopDetailsActivity" />
-        <activity android:name=".PatientForm" />
-        <activity android:name=".DoctorOfficeExtra" />
-        <activity android:name=".DentistExtra" />
-        <activity android:name=".OptometristExtra" />
-        <activity android:name=".KseniaListView" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".AnnaListView" />
         <activity android:name=".AnnaMultipleChoiceActivity" />

@@ -11,26 +11,25 @@
     <string name="station_number">Enter stop number</string>
     <string name="button_search">Go</string>
 
+    <string name="btnAnswerMCAnna"> ANSWER </string>
+    <string name="questionTextAnna"> Here will be the text of the question </string>
+    <string name="title_activity_anna_true_false">AnnaTrueFalse</string>
+    <string name="action_settings">Settings</string>
 
-    <string name="doctorChoice">Please, select a doctor</string>
-    <string name="doctorOffice">Doctor\'s Office</string>
+    <string name="addPatient">Add Patient</string>
+    <string name="saveChanges">Save Changes</string>
+    <string name="deletePatient">Delete</string>
+    <string name="updatePatient">Edit</string>
+
+    <string name="hintYourName">Your Name</string>
+    <string name="hintYourBirthday">Your Birthday</string>
+    <string name="YourAddress">Your Address</string>
+    <string name="hintPhoneNumber">Phone Number</string>
+    <string name="HealthCardNumber">Health Card Number</string>
+    <string name="reasonForVisti">Enter Reason For Your Visit</string>
+    <string name="doctorChoice">Doctor\'s Office</string>
+    <string name="optometrist">Optometrist</string>
     <string name="dentist">Dentist</string>
-    <string name="optometrist">Optometrist </string>
-
-    <string name="fName">First Name </string>
-    <string name="lName">Last Name </string>
-    <string name="address">Address</string>
-    <string name="bDate">Date of Birth</string>
-    <string name="phoneNumber">Phone Number</string>
-    <string name="hCardNumber">Health Card Number</string>
-    <string name="reason">Reason for a visit</string>
-    <string name="next">Next</string>
-    <string name="enterInfo">Please, fill out and press "Next":</string>
-
-    <string name="continueForm">Please, finish the form and press "Submit button":</string>
-    <string name="surgeries">Specify any previous surgeries:</string>
-    <string name="allergies">Specify any previous allergies:</string>
-    <string name="KLbtnSubmit">Submit</string>
     <string name="braces">Have you ever had braces?</string>
     <string name="benefits">Do you have medical benefits?</string>
     <string name="yes">Yes</string>
@@ -38,11 +37,11 @@
 
     <string name="glasses">What date did you buy your glasses?</string>
     <string name="store">Which store did you buy your glasses from?</string>
-
-    <string name="btnAnswerMCAnna"> ANSWER </string>
-    <string name="questionTextAnna"> Here will be the text of the question </string>
-    <string name="title_activity_anna_true_false">AnnaTrueFalse</string>
-    <string name="action_settings">Settings</string>
+    <string name="continueForm">Please, finish the form and press "Submit button":</string>
+    <string name="surgeries">Specify any previous surgeries:</string>
+    <string name="allergies">Specify any previous allergies:</string>
+    <string name="hint">You can type here...</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
 
 
 
