@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
+import java.security.KeyException;
+
 public class MainActivity extends AppCompatActivity {
     Button pavel;
     Button ksenia;
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         ksenia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DoctorChoice.class);
+                Intent intent = new Intent(MainActivity.this, KseniaMActivity.class);
                 startActivity(intent);
             }
         });
