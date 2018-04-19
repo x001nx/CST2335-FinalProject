@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/icons8_info_24"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:scaleType="center"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/pj_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pj_name"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/pj_version"
+        android:text="@string/pj_version"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/pj_instructions"
+        android:text="@string/pj_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

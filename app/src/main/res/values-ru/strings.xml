@@ -13,6 +13,7 @@
     <string name="movieInstructions">"Версия 1.0б автор Светлана Нечаева.
         Это приложение позвляет пользователю добавлять, удалять и обновлять фильмы, или заружать фильмы с XML</string>
 
+
     <string name="title">Название</string>
     <string name="actors">Актеры</string>
     <string name="url">URL</string>
@@ -38,5 +39,62 @@
     <string name="button_label">Показать диалоговое окно</string>
     <string name="ok">OK</string>
     <string name="cancel">Отменить</string>
+
+
+    <string name="app_name">Again</string>
+    <string name="addPatient">Добавить пациента</string>
+    <string name="saveChanges">Сохранить</string>
+    <string name="deletePatient">Удалить</string>
+    <string name="updatePatient">Измнить</string>
+
+    <string name="hintYourName">ИФО</string>
+    <string name="hintYourBirthday">Дата Рождения</string>
+    <string name="YourAddress">Адрес</string>
+    <string name="hintPhoneNumber">Номер телефона</string>
+    <string name="HealthCardNumber">Номер страховки</string>
+    <string name="reasonForVisti">Причина визита</string>
+    <string name="doctorChoice">Главный офис</string>
+    <string name="optometrist">Оптометрист</string>
+    <string name="dentist">Дантист</string>
+    <string name="braces">Носили ли вы брэкеты?</string>
+    <string name="benefits">Есть ли у вас страховка?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="glasses">Когда Вы купили очки?</string>
+    <string name="store">Где Вы купили очки?</string>
+    <string name="continueForm">Заполните форму и нажмите СОХРАНИТЬ</string>
+    <string name="surgeries">Хирургические вмешательства:</string>
+    <string name="allergies">Аллергии:</string>
+    <string name="hint">Печатайте здесь...</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="doctorChoice">Выберете доктора</string>
+    <string name="btnAnswerMCAnna"> Ответ </string>
+    <string name="questionTextAnna"> Здесь будет текст вопроса </string>
+    <string name="import_xml">Импорт Базы</string>
+    <string name="addQuestionText">Вопрос</string>
+    <string name="addAnswer1"> Вариант ответа №1 </string>
+    <string name="addAnswer2"> Вариант ответа №2 </string>
+    <string name="addAnswer3"> Вариант ответа №3 </string>
+    <string name="addAnswer4"> Вариант ответа №4 </string>
+    <string name="Add">Добавить</string>
+    <string name="putYourQuestion">Запишите Ваш вопрос</string>
+    <string name="Option1Answer"> Запишите Ваш ответ</string>
+    <string name="Option2Answer">Запишите Ваш ответ</string>
+    <string name="Option3Answer">Запишите Ваш ответ</string>
+    <string name="Option4Answer">Запишите Ваш ответ</string>
+    <string name="rightAnswer">Запишите номер правильного ответа </string>
+    <string name="correctAnswer">какой ответ правильный?</string>
+    <string name="rightTFAnswer">Запишите 1 если Правда или 2 если Ложь </string>
+    <string name="correctTFAnswer">Запишите код правильного ответа</string>
+    <string name="rightNumericAnswer">Правильный ответ</string>
+    <string name="correctNumericAnswer">Правильный ответ...</string>
+    <string name="lambdaAnswer">До какого знака после запятой проверять?</string>
+    <string name="lambdaToCheck">Запишите число, сколько цифр проверять</string>
+    <string name="multiple_dialog"> Вы хотите добавить еще один вопрос? </string>
+    <string name="ok"> </string>
+    <string name="cancel"> </string>
+    <string name="exit"> Нет </string>
+    <string name="addMore"> Добавить еще </string>
 
 </resources>
