@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/svAction_one"
+        android:title="Quiz"
+        android:icon="@drawable/report_card"
+        android:orderInCategory="110"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/svAction_two"
+        android:title="Patient"
+        android:icon="@drawable/clinic"
+        android:orderInCategory="120"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/svAction_three"
+        android:title="Transport"
+        android:icon="@drawable/bus"
+        android:orderInCategory="130"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/svAbout"
+        android:title="@string/about"
+        android:orderInCategory="601"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/movieXML"
+        android:title="@string/movieXML"
+        android:orderInCategory="401"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/summary"
+        android:title="@string/movieSummary2"
+        android:orderInCategory="501"
+        app:showAsAction="never" />
+
+</menu>
