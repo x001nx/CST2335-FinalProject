@@ -36,12 +36,15 @@
             android:name=".AnnaTrueFalse"
             android:label="@string/title_activity_anna_true_false"
 
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".PavelStopDetailsPort" />
-        <activity android:name=".Update"></activity>
             android:theme="@style/AppTheme.NoActionBar">
-      </activity>
-       <activity android:name=".PavelStopDetailsPort"></activity>
+        </activity>
+        <activity android:name=".PavelStopDetailsPort" />
+        
+        <activity android:name=".Update"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+       
+        <activity android:name=".PavelStopDetailsPort"></activity>
         <activity android:name=".AnnaAddMultipleChoice"/>
         <activity android:name=".AnnaAddNumeric"/>
         <activity android:name=".AnnaAddQuestionsMenu"/>
