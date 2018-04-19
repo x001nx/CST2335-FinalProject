@@ -6,27 +6,42 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button button4;
+public class MainActivity extends AppCompatActivity {
+    Button pavel;
+    Button ksenia;
+    Button anna;
+    Button sveta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(this);
-    }
+        pavel = findViewById(R.id.pavel);
+        ksenia = findViewById(R.id.ksenia);
+        anna = findViewById(R.id.anna);
 
-    @Override
-    public void onClick(View view) {
-        switch(view.getId()){
-            case R.id.button4:
-                Intent intent = new Intent(this, MovieActivity.class);
+        anna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(MainActivity.this, QuizActivity.class);
                 startActivity(intent);
-                break;
-            default:
-                break;
-        }
+            }
+        });
+
+        pavel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(MainActivity.this, PavelStartActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ksenia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DoctorChoice.class);
+                startActivity(intent);
+            }
+        });
     }
 }
