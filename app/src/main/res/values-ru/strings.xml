@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Финальный проект</string>
+    <string name="category">Кино</string>
+    <string name="addMovie">Добавить фильм</string>
+    <string name="movieXML">XML</string>
+    <string name="about">О</string>
+    <string name="movieImport">Фильм был загружен</string>
+    <string name="movieSummary">Итои:</string>
+    <string name="movieStatistics">Статистика рейтинга: Высший</string>
+    <string name="movieSummary2">Итоги</string>
+    <string name="movieAuthor">"Номер версии, имя автора, и инструкция: "</string>
+    <string name="movieInstructions">"Версия 1.0б автор Светлана Нечаева.
+        Это приложение позвляет пользователю добавлять, удалять и обновлять фильмы, или заружать фильмы с XML</string>
+
+    <string name="title">Название</string>
+    <string name="actors">Актеры</string>
+    <string name="url">URL</string>
+    <string name="genre">Жанр</string>
+    <string name="rating">Рейтинг</string>
+    <string name="description">Описание</string>
+    <string name="length">Продолжительность</string>
+
+    <string name="movieAdded">Фильм добавлен</string>
+    <string name="movieDelete">Удалить</string>
+    <string name="movieUpdate">Обновить</string>
+    <string name="movieDeleted">Фильм удален</string>
+    <string name="movieUpdated">Фильм обновен</string>
+
+    <string name="movieLowRating">, Самый низкий</string>
+    <string name="movieAverage">, Средний</string>
+
+    <string name="statisticsButton">Итоги</string>
+    <string name="deleteButton">Удалить</string>
+    <string name="updateButton">Обновить</string>
+
+    <string name="dialog_button_label">OK</string>
+    <string name="button_label">Показать диалоговое окно</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отменить</string>
+
+</resources>
