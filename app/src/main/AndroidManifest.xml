@@ -36,7 +36,6 @@
         <activity android:name=".OptometristExtra" />
         <activity android:name=".KseniaListView" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".AnnaListView" />
         <activity android:name=".AnnaMultipleChoiceActivity" />
         <activity
             android:name=".AnnaTrueFalse"
@@ -44,6 +43,13 @@
             android:theme="@style/AppTheme.NoActionBar">
       </activity>
        <activity android:name=".PavelStopDetailsPort"></activity>
+        <activity android:name=".AnnaAddMultipleChoice"/>
+        <activity android:name=".AnnaAddNumeric"/>
+        <activity android:name=".AnnaAddQuestionsMenu"/>
+        <activity android:name=".AnnaAddTrueFalse"/>
+        <activity android:name=".AnnaQuestionsListView"/>
+        <activity android:name=".AnnaResultActivity"/>
+        <activity android:name=".AnnaTakeQuizActivity"/>
     </application>
 
 </manifest>

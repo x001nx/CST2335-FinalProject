@@ -40,6 +40,7 @@ public class PavelStopsFragment extends Fragment {
     ArrayList<String> routeNumberAL;
     ArrayList<String> routeHeadingAL;
     ArrayList<String> routeDirectionAL;
+    ArrayList<String> routeTimeAL;
     ListView listView;
     RoutesAdapter routesAdapter;
 
@@ -83,6 +84,7 @@ public class PavelStopsFragment extends Fragment {
         routeNumberAL = new ArrayList<>();
         routeHeadingAL = new ArrayList<>();
         routeDirectionAL = new ArrayList<>();
+        routeTimeAL = new ArrayList<>();
 
         QueryOC queryOC = new QueryOC();
         queryOC.execute();
@@ -144,6 +146,8 @@ public class PavelStopsFragment extends Fragment {
         private String getRouteHeader(int position) {
             return routeHeadingAL.get(position);
         }
+
+        private String getRouteTime(int position) {return routeTimeAL.get(position);}
         /**
          * Create view
          * @param position int
@@ -162,6 +166,7 @@ public class PavelStopsFragment extends Fragment {
             TextView routeNumber = result.findViewById(R.id.routeNumber);
             TextView routeHeader = result.findViewById(R.id.routeHeader);
             TextView routeDirection = result.findViewById(R.id.routeDirection);
+            TextView routeTime = result.findViewById(R.id.pjNextTrip1);
             //SET TEXT IN RESULT
             routeNumber.setText(getRouteNumber(position)); // get the string at position
             Log.i("****** getView", getRouteNumber(position));
@@ -169,12 +174,15 @@ public class PavelStopsFragment extends Fragment {
             Log.i("****** getView", getRouteHeader(position));
             routeDirection.setText(getRouteDirection(position));
             Log.i("****** getView", getRouteDirection(position));
+            routeTime.setText(getRouteTime(position));
             return result;
         }
 
     }
    public class QueryOC extends AsyncTask<String, Integer, String>  {
-       String osQuery = "https://api.octranspo1.com/v1.2/GetRouteSummaryForStop?appID=c88f040c&&apiKey=fe500fc8da4e4f5e823b913c388cc2f1&stopNo=";
+//       String osQuery = "https://api.octranspo1.com/v1.2/GetRouteSummaryForStop?appID=c88f040c&&apiKey=fe500fc8da4e4f5e823b913c388cc2f1&stopNo=";
+       String osQuery = "https://api.octranspo1.com/v1.2/GetNextTripsForStopAllRoutes?appID=c88f040c&&apiKey=fe500fc8da4e4f5e823b913c388cc2f1&stopNo=";
+
        String errorCode;
         String[] route = new String[3];
        @Override
@@ -222,6 +230,10 @@ public class PavelStopsFragment extends Fragment {
                            routeDirectionAL.add(parser.nextText());
 //                           route[2] = parser.nextText();
                        }
+                       else if(parser.getName().equalsIgnoreCase("TripStartTime")){
+                           routeTimeAL.add(parser.nextText());
+//                           route[2] = parser.nextText();
+                       }
                        if (parser.getName().equalsIgnoreCase("Error")){
                            errorCode = parser.nextText();
                            Log.i("****** Error", errorCode);
@@ -254,11 +266,6 @@ public class PavelStopsFragment extends Fragment {
            }
            else {
                routesAdapter.notifyDataSetChanged();
-//               Log.i("******RouteNo", routeNumberAL.toString());
-//               Log.i("******RouteHeading", routeHeadingAL.toString());
-//               Log.i("******RouteDirection", routeDirectionAL.toString());
-
-//               routesAdapter.notifyDataSetChanged();
            }
 
        }

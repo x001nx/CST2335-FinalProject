@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.delle6330.assignment1.AnnaAddQuestionsMenu">
+
+    <Button
+        android:id="@+id/multChoiceBtnAnna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/colorGrapeFruitDark"
+        android:elevation="12dp"
+        android:gravity="center"
+        android:text="Add Multiple Choice Question" />
+
+    <Button
+        android:id="@+id/trueFalseBtnAnna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLavenderDark"
+        android:elegantTextHeight="true"
+        android:fadingEdge="horizontal|vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Add True/False Question"
+        tools:clickable="true" />
+
+    <Button
+        android:id="@+id/numericBtnAnna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:capitalize="words"
+        android:gravity="center"
+        android:text="Add Numeric Question"
+        tools:background="@color/colorGrassDark"
+        tools:focusable="auto"
+        tools:fontFamily="monospace" />
+
+</LinearLayout>

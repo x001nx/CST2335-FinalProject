@@ -12,9 +12,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <Toolbar android:id="@+id/quiz_toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <ProgressBar
+                android:id="@+id/progressBarAnna"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
+                android:layout_height="200dp"
                 android:background="@drawable/background_dash_small"
                 android:text="QUIZ DASHBOARD"
                 android:fontFamily="sans-serif"
@@ -30,7 +45,7 @@
                 android:weightSum="3"
                 >
                 <LinearLayout
-                    android:id="@+id/multipleChoiceLL"
+                    android:id="@+id/quizLL"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1.5"
@@ -43,19 +58,19 @@
                         android:layout_width="48dp"
                         android:layout_height="46dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/greenqm"
+                        android:src="@drawable/tf"
                         android:layout_marginTop="20dp"
-
+                        android:id="@+id/quizIV"
                         android:tint="@color/colorWhite" />
 
                     <TextView
-                        android:id="@+id/multipleChoiceTV"
+                        android:id="@+id/quizTV"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
                         android:background="@color/colorLavenderDark"
                         android:padding="8dp"
-                        android:text="Multiple-Choice"
+                        android:text="Take a Quiz"
                         android:textAlignment="center"
                         android:textColor="@color/colorWhite"
                         android:textStyle="bold"
@@ -64,7 +79,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/trueFalseLL"
+                    android:id="@+id/resultsLL"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1.5"
@@ -77,19 +92,19 @@
                         android:layout_width="46dp"
                         android:layout_height="46dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/greenqm"
+                        android:src="@drawable/result"
                         android:layout_marginTop="20dp"
-
+                        android:id="@+id/resultsIV"
                         android:tint="@color/colorWhite" />
 
                     <TextView
-                        android:id="@+id/trueFalseTV"
+                        android:id="@+id/resultsTV"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
                         android:background="@color/colorAquaDark"
                         android:padding="8dp"
-                        android:text="True-False"
+                        android:text="Results"
                         android:textAlignment="center"
                         android:textStyle="bold"
                         android:fontFamily="cursive"
@@ -108,7 +123,7 @@
                 android:weightSum="3"
                 >
                 <LinearLayout
-                    android:id="@+id/numericAnswerLL"
+                    android:id="@+id/addQuestionLL"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1.5"
@@ -118,21 +133,22 @@
                     >
 
                     <ImageView
+                        android:id="@+id/addQuestionIV"
                         android:layout_width="47dp"
                         android:layout_height="43dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/greenqm"
+                        android:src="@drawable/num"
                         android:layout_marginTop="20dp"
                         android:tint="@color/colorWhite" />
 
                     <TextView
-                        android:id="@+id/numericAnswerTV"
+                        android:id="@+id/addQuestionTV"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
                         android:background="@color/colorPinkRoseDark"
                         android:padding="8dp"
-                        android:text="Numeric Answer"
+                        android:text="Add Question"
                         android:textAlignment="center"
                         android:textColor="@color/colorWhite"
                         android:textStyle="bold"
@@ -141,7 +157,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/resultLL"
+                    android:id="@+id/questionListLL"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1.5"
@@ -151,21 +167,22 @@
                     >
 
                     <ImageView
+                        android:id="@+id/questionListIV"
                         android:layout_width="46dp"
                         android:layout_height="45dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/greenqm"
+                        android:src="@drawable/mult"
                         android:tint="@color/colorWhite" />
 
                     <TextView
-                        android:id="@+id/resultTV"
+                        android:id="@+id/questionListTV"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
                         android:background="@color/colorBlueJeansDark"
                         android:padding="8dp"
-                        android:text="Results"
+                        android:text="All questions"
                         android:textAlignment="center"
                         android:textStyle="bold"
                         android:fontFamily="cursive"

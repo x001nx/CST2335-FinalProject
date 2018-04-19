@@ -57,5 +57,27 @@
     routes that service this stop.</string>
     <string name="pj_delete_stop">Delete Stop</string>
 
+
+    <string name="import_xml">Import XML</string>
+    <string name="addQuestionText">Question</string>
+    <string name="addAnswer1"> Answer Option #1 </string>
+    <string name="addAnswer2"> Answer Option #2 </string>
+    <string name="addAnswer3"> Answer Option #3 </string>
+    <string name="addAnswer4"> Answer Option #4 </string>
+    <string name="Add">Add</string>
+    <string name="putYourQuestion">Type your question here</string>
+    <string name="Option1Answer"> Type your answer here</string>
+    <string name="Option2Answer">Type your answer here</string>
+    <string name="Option3Answer">Type your answer here</string>
+    <string name="Option4Answer">Type your answer here</string>
+    <string name="rightAnswer">Type 1, 2, 3 or 4 as correct answer </string>
+    <string name="correctAnswer">what is correct answer number?</string>
+    <string name="rightTFAnswer">Put 1 for True or 2 for False </string>
+    <string name="correctTFAnswer">Type code for correct answer</string>
+    <string name="rightNumericAnswer">Type correct answer</string>
+    <string name="correctNumericAnswer">Correct answer is... </string>
+    <string name="lambdaAnswer">Up to what decimal check goes?</string>
+    <string name="lambdaToCheck">Number of digits after decimal</string>
+
 </resources>
 
