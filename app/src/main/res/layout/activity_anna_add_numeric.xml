@@ -21,7 +21,7 @@
         android:id="@+id/addNumericQuestionTextAnna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         tools:hint="@string/putYourQuestion" />
 
 
@@ -38,6 +38,7 @@
         android:id="@+id/addCorrectNumericAnswerAnna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
         tools:hint="@string/correctNumericAnswer" />
 
 
@@ -54,6 +55,7 @@
         android:id="@+id/lambdaToCheckAnswerAnna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
         tools:hint="@string/lambdaToCheck" />
 
     <Button

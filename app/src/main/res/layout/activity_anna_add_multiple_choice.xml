@@ -8,19 +8,19 @@
     android:orientation="vertical">
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/addQuestionText"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addQuestionText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/addQuestionTextAnna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         tools:hint="@string/putYourQuestion" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:id="@+id/addAnswerOption1Anna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="text"
         tools:hint="@string/Option1Answer" />
 
     <TextView
@@ -52,7 +52,7 @@
         android:id="@+id/addAnswerOption2Anna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="none|text"
         tools:hint="@string/Option2Answer" />
 
     <TextView
@@ -68,7 +68,7 @@
         android:id="@+id/addAnswerOption3Anna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="text"
         tools:hint="@string/Option3Answer" />
 
     <TextView
@@ -84,7 +84,7 @@
         android:id="@+id/addAnswerOption4Anna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="text"
         tools:hint="@string/Option4Answer" />
 
     <TextView

@@ -1,3 +1,13 @@
+/* File name: AnnaTakeQuizActivity.java
+ * @Author: Anna Shteyngart,
+ * @Student#: 040883547
+ * @Course: CST2335
+ * @Assignment: FinalProject
+ * @Date: 19/04/2018
+ * @Professor: Erik Torunski
+ * @Class purpose: raw template of the quiz
+ */
+
 package com.example.delle6330.assignment1;
 
 import android.content.Intent;
@@ -42,6 +52,9 @@ public class AnnaTakeQuizActivity extends AppCompatActivity {
     ArrayList<String> answersArray;
 private String question = "";
 
+/*
+* onCreate
+ */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +78,7 @@ private String question = "";
         textColorDefaultRb = rb4.getTextColors();
 
         MultChoicDBHelper dbHelper = new MultChoicDBHelper(this);
-        questionList = dbHelper.getAllQuestions();
+        questionList = dbHelper.getAllMultQuestions();
 
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -91,6 +104,9 @@ private String question = "";
 
     }
 
+/*
+* method to show the question
+ */
 
 private void showNextQuestion(){
         rb1.setTextColor(textColorDefaultRb);
@@ -132,6 +148,9 @@ private void showNextQuestion(){
     }
     }
 
+    /*
+    * method checks answer and changes score
+     */
     public void checkAnswer() {
     answered = true;
 
