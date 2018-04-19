@@ -1,3 +1,12 @@
+/* File name: AnnaAddQuestionsMenu.java
+ * @Author: Anna Shteyngart,
+ * @Student#: 040883547
+ * @Course: CST2335
+ * @Assignment: FinalProject
+ * @Date: 19/04/2018
+ * @Professor: Erik Torunski
+ * @Class purpose: class to add Multiple Choice question
+ */
 package com.example.delle6330.assignment1;
 
 import android.content.Intent;
@@ -11,6 +20,10 @@ public class AnnaAddQuestionsMenu extends AppCompatActivity {
     Button addMultChoice;
     Button addTrueFalse;
     Button addNumeric;
+
+    /*
+* OnCreate, has onClickListeners for buttons that send to the form to add specific question
+ */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

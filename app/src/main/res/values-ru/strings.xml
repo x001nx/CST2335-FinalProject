@@ -52,5 +52,10 @@
     <string name="correctNumericAnswer">Правильный ответ...</string>
     <string name="lambdaAnswer">До какого знака после запятой проверять?</string>
     <string name="lambdaToCheck">Запишите число, сколько цифр проверять</string>
+    <string name="multiple_dialog"> Вы хотите добавить еще один вопрос? </string>
+    <string name="ok"> </string>
+    <string name="cancel"> </string>
+    <string name="exit"> Нет </string>
+    <string name="addMore"> Добавить еще </string>
 
 </resources>

@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.delle6330.assignment1.AnnaTrueFalseFragment"
-    tools:showIn="@layout/activity_anna_true_false">
+    tools:context="com.example.delle6330.assignment1.AnnaQuestionDetails">
+
+    <FrameLayout
+        android:id="@+id/phone_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
 
 </android.support.constraint.ConstraintLayout>

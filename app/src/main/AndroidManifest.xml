@@ -35,7 +35,19 @@
         <activity
             android:name=".AnnaTrueFalse"
             android:label="@string/title_activity_anna_true_false"
-
+            android:theme="@style/AppTheme.NoActionBar" />
+      
+        <activity android:name=".PavelStopDetailsPort" />
+        <activity android:name=".AnnaAddMultipleChoice" />
+        <activity android:name=".AnnaAddNumeric" />
+        <activity android:name=".AnnaAddQuestionsMenu" />
+        <activity android:name=".AnnaAddTrueFalse" />
+        <activity android:name=".AnnaQuestionsListView" />
+        <activity android:name=".AnnaResultActivity" />
+        <activity android:name=".AnnaTakeQuizActivity" />
+        <activity android:name=".AnnaQuestionDetails" />
+        <activity android:name=".AnnaMultChoiceFragment" />
+        <activity android:name=".AnnaNumericFragment"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".PavelStopDetailsPort" />

@@ -1,3 +1,13 @@
+/* File name: QuizActivity.java
+ * @Author: Anna Shteyngart,
+ * @Student#: 040883547
+ * @Course: CST2335
+ * @Assignment: FinalProject
+ * @Date: 19/04/2018
+ * @Professor: Erik Torunski
+ * @Class purpose: class to describe the table
+ */
+
 package com.example.delle6330.assignment1;
 
 import android.app.Activity;
@@ -14,6 +24,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
@@ -41,6 +52,11 @@ public class QuizActivity extends Activity {
     TextView questList;
     Context ctx;
     int highscore;
+    ProgressBar progressBar;
+
+    /*
+    * onCreate - sets all layouts and clickListeners. Main page of Quiz app
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +78,7 @@ public class QuizActivity extends Activity {
         quizIV = findViewById(R.id.quizIV);
         resultIV = findViewById(R.id.resultsIV);
         questListIV = findViewById(R.id.questionListIV);
+        progressBar = findViewById (R.id.progressBarAnna);
         
 
         ctx = this;
@@ -243,15 +260,17 @@ public class QuizActivity extends Activity {
         switch(id){
             case R.id.import_xml:
 
-//                SharedPreferences sp = getSharedPreferences("ImportPrefs", MODE_PRIVATE);
-                MultChoicDBHelper helper = new MultChoicDBHelper(QuizActivity.this);
-//                boolean imported = sp.getBoolean("AlreadyImported", false);
-//                if(!imported)
-                    helper.importXML();
-//                else
-//                    Toast.makeText(this, "Already imported", Toast.LENGTH_LONG).show();
-//
-//                sp.edit().putBoolean("AlreadyImported", true).commit();
+
+                MultChoicDBHelper helpMult = new MultChoicDBHelper(QuizActivity.this);
+
+
+                 if(   helpMult.importXML()) {
+                     Log.i("Data uploaded", "helpMult.importXML()");
+
+                     Toast.makeText(getApplicationContext(), "DataBase imported successfully", Toast.LENGTH_LONG).show();
+
+                 }
+
                  break;
 
         }

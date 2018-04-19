@@ -17,6 +17,7 @@ android {
 
         }
     }
+    buildToolsVersion '26.0.2'
 }
 
 dependencies {
@@ -42,6 +43,16 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
 }
 
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+}
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'
 }

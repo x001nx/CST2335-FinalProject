@@ -77,6 +77,11 @@
     <string name="correctNumericAnswer">Correct answer is... </string>
     <string name="lambdaAnswer">Up to what decimal check goes?</string>
     <string name="lambdaToCheck">Number of digits after decimal</string>
+    <string name="multiple_dialog"> Would you like to add more questions? </string>
+    <string name="ok"> </string>
+    <string name="cancel"> </string>
+    <string name="exit"> Finish </string>
+    <string name="addMore"> Add One More </string>
 
 </resources>
 

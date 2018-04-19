@@ -9,7 +9,7 @@
 
     <ListView
         android:id="@+id/questionViewAnna"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorGrass"
         android:layout_below="@id/progressBarAnna"
@@ -17,6 +17,13 @@
 
     </ListView>
 
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/questionViewAnna"
+        android:background="@color/colorAccent"
+        android:id="@+id/tablet_frame">
 
+    </FrameLayout>
 
 </RelativeLayout>

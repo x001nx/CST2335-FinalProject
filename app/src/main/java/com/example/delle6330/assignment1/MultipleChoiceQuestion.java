@@ -1,12 +1,21 @@
+/* File name: MultipleChoiceQuestion.java
+ * @Author: Anna Shteyngart,
+ * @Student#: 040883547
+ * @Course: CST2335
+ * @Assignment: FinalProject
+ * @Date: 19/04/2018
+ * @Professor: Erik Torunski
+ * @Class purpose: class to create an object that inherits from SuperClass
+ */
+
 package com.example.delle6330.assignment1;
 
 /**
  * Created by ansht on 2018-04-10.
  */
 
-public class MultipleChoiceQuestion {
-    private int questType;
-    private String question;
+public class MultipleChoiceQuestion extends AnnaQuestionSuperClass {
+
     private String option1;
     private String option2;
     private String option3;
@@ -16,9 +25,9 @@ public class MultipleChoiceQuestion {
     public MultipleChoiceQuestion(){}
 
 
-    public MultipleChoiceQuestion(int questType, String question, String option1, String option2, String option3, String option4, String answerNr) {
-        this.questType = questType;
-        this.question = question;
+    public MultipleChoiceQuestion(int type, String quest, String option1, String option2, String option3, String option4, String answerNr) {
+        super.setQuestType(type);
+        super.setQuestion(quest);
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
@@ -26,13 +35,7 @@ public class MultipleChoiceQuestion {
         this.answerNr = answerNr;
     }
 
-    public int getQuestionType() {
-        return questType;
-    }
 
-    public String getQuestion() {
-        return question;
-    }
 
     public String getOption1() {
         return option1;
@@ -54,13 +57,7 @@ public class MultipleChoiceQuestion {
         return answerNr;
     }
 
-    public void setQuestType (int questType) {
-        this.questType = questType;
-    }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
 
     public void setOption1(String option1) {
         this.option1 = option1;
