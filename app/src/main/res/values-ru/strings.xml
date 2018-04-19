@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <string name="app_name">Again</string>
     <string name="addPatient">Добавить пациента</string>
     <string name="saveChanges">Сохранить</string>
@@ -28,5 +29,28 @@
     <string name="allergies">Аллергии:</string>
     <string name="hint">Печатайте здесь...</string>
     <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="doctorChoice">Выберете доктора</string>
+    <string name="btnAnswerMCAnna"> Ответ </string>
+    <string name="questionTextAnna"> Здесь будет текст вопроса </string>
+    <string name="import_xml">Импорт Базы</string>
+    <string name="addQuestionText">Вопрос</string>
+    <string name="addAnswer1"> Вариант ответа №1 </string>
+    <string name="addAnswer2"> Вариант ответа №2 </string>
+    <string name="addAnswer3"> Вариант ответа №3 </string>
+    <string name="addAnswer4"> Вариант ответа №4 </string>
+    <string name="Add">Добавить</string>
+    <string name="putYourQuestion">Запишите Ваш вопрос</string>
+    <string name="Option1Answer"> Запишите Ваш ответ</string>
+    <string name="Option2Answer">Запишите Ваш ответ</string>
+    <string name="Option3Answer">Запишите Ваш ответ</string>
+    <string name="Option4Answer">Запишите Ваш ответ</string>
+    <string name="rightAnswer">Запишите номер правильного ответа </string>
+    <string name="correctAnswer">какой ответ правильный?</string>
+    <string name="rightTFAnswer">Запишите 1 если Правда или 2 если Ложь </string>
+    <string name="correctTFAnswer">Запишите код правильного ответа</string>
+    <string name="rightNumericAnswer">Правильный ответ</string>
+    <string name="correctNumericAnswer">Правильный ответ...</string>
+    <string name="lambdaAnswer">До какого знака после запятой проверять?</string>
+    <string name="lambdaToCheck">Запишите число, сколько цифр проверять</string>
 
 </resources>
