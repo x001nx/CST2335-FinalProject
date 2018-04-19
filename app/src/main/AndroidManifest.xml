@@ -30,20 +30,15 @@
             android:name=".PavelStartActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".PavelStopDetailsActivity" />
-        <activity android:name=".PatientForm" />
-        <activity android:name=".DoctorOfficeExtra" />
-        <activity android:name=".DentistExtra" />
-        <activity android:name=".OptometristExtra" />
-        <activity android:name=".KseniaListView" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".AnnaListView" />
         <activity android:name=".AnnaMultipleChoiceActivity" />
         <activity
             android:name=".AnnaTrueFalse"
             android:label="@string/title_activity_anna_true_false"
-            android:theme="@style/AppTheme.NoActionBar">
-      </activity>
-       <activity android:name=".PavelStopDetailsPort"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PavelStopDetailsPort" />
+        <activity android:name=".Update"></activity>
     </application>
 
 </manifest>
